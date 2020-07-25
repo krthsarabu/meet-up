@@ -6,9 +6,9 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">New Meeting</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item (click)="createMeeting()">New Meeting</a>
+      <a mat-list-item>Link 2</a>
+      <a mat-list-item>Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,9 +23,9 @@
       </button><span class="outline-none cursor-pointer">Meet up</span>
       <span class="spacer"></span>
       <div [ngClass] = "{hiddenMainNav: (isHandset$ | async)}" class="d-flex align-items-center">
-      <a mat-list-item href="#" matTooltip="New Meeting" matTooltipPosition="below"><mat-icon>add_circle</mat-icon></a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item matTooltip="New Meeting" matTooltipPosition="below" (click)="createMeeting()"><mat-icon>add_circle</mat-icon></a>
+      <a mat-list-item>Link 2</a>
+      <a mat-list-item>Link 3</a>
       </div>
     </mat-toolbar>
     <ng-content></ng-content>
