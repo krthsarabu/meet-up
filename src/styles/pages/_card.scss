@@ -1,0 +1,57 @@
+.card-dashboard{
+    display: flex;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    .card-item{
+        width: 350px;    
+        margin: 20px 10px;
+        text-align: right;
+        position: relative;
+        outline: none;
+        @media #{$tablet} {
+            width: 100%;
+        }
+        .card-logo{
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            top: -14px;
+            left: 15px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            cursor: pointer;
+            &.games{
+                background: linear-gradient(60deg,$sunshade,$pizazz );
+                box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(255,152,0,.4);
+            }
+            &.weather{
+                background: linear-gradient(60deg,$fern,$apple);
+                box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(76,175,80,.4);
+            }
+            &.conversions{
+                background: linear-gradient(60deg,$burntSienna,$cinnabar);
+                box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(244,67,54,.4);
+            }
+            &.loanCalculator{
+                background: linear-gradient(60deg,$scooter,$pacificBlue);
+                box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(0,188,212,.4);
+            }
+            &.mileage{
+                background: linear-gradient(60deg,$amethyst,$seance);
+                box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
+            }
+        }
+        .mat-card{
+            height: 120px; 
+            cursor: pointer;   
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.6em;
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+        }
+    }
+}

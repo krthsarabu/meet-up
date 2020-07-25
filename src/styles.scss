@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "styles/tools/vendor";
+
+@import "styles/helper/variables";
+@import "styles/helper/mixin";
+@import "styles/helper/function";
+
+@import "styles/pages/material";
+@import "styles/pages/common";
+@import "styles/pages/buttons";
+@import "styles/pages/dropdowns";
+@import "styles/pages/card";
+@import "styles/pages/ribbon";
