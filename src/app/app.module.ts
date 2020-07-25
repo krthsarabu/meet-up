@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NewMeetingComponent } from './shared/components/new-meeting/new-meeting.component';
-import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './shared/components/main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -14,14 +13,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NewMeetingComponent,
-    HeaderComponent,
-    MainNavComponent
+    MainNavComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
