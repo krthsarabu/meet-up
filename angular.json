@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "meetup"
+    }
+  },
+  "defaultProject": "meetup",
+  "cli": {
+    "analytics": "aa18d857-9e06-4c84-9252-8185c45045cc"
+  }
 }
